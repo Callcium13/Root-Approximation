@@ -1,0 +1,35 @@
+//declarations
+int X = 0;
+int N = 0;
+int root_X;
+int i;
+
+int main (void)
+{
+    //checks that answer is not negative
+    do
+    {
+    //ask the number to get the root of
+    X = get_int("X=?: ");        
+    } while (X ==0);
+    
+    do
+    {
+    //ask what root
+    N = get_int("Nth root N=?: ");        
+    } while (N <1);
+    
+
+    //calculate root X
+    do
+    {
+    //ask the number to get the root of
+    i++
+    root_X = i;        
+    } while ((i+1)^N <i);
+    
+    
+    printf("%i\n",root_X);
+
+    
+}
