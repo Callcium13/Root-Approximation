@@ -1,8 +1,9 @@
+#Program to find the square, cube and nth root of a user supplied number and value for n
 #checks that num is not negative
 num = -1
-while num < 0:
-    #ask the number to get the root of
-    num = (int(input("Number?: ")))
+while (num < 1):
+  #ask the number to get the root of
+  num = (int(input("Number?: ")))
 
 res_p = -1
 while res_p <= 1:
@@ -27,7 +28,7 @@ while (x <= num):
         x = x * i
 
 #Find closest fit to terminal count
-if ((i + 1)**2 == num):
+if ((i)**2 == num):
     square_X = i
 elif ((i + 1)**2 - num) < (num - (i + 1)**2):
     square_X = i + res
@@ -45,7 +46,7 @@ while (x <= num):
     for j in range(3):
         x = x * i
 
-if ((i + 1)**3 == num):
+if ((i)**3 == num):
     cube_X = i
 elif ((i + 1)**3 - num) <= (num - (i + 1)**3):
     cube_X = i + res
@@ -63,7 +64,7 @@ while (x <= num):
     for j in range(nth):
         x = x * i
 
-if ((i + 1)**nth == num):
+if ((i)**nth == num):
     nth_X = i
 elif ((i + 1)**nth - num) <= (num - (i + 1)**nth):
     nth_X = i + res
@@ -79,4 +80,4 @@ nth_X = round(nth_X, res_p)
 
 print('Square root approximation=', square_X)
 print('Cube root approximation=', cube_X)
-print('nth root approximation=', nth_X)
+print(nth,'th root approximation=', nth_X)
